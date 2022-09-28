@@ -20,14 +20,14 @@ class Employee:
     def __str__(self):
         msg = self.name + " works on a "
         if self.isContract:
-            msg += "contract of " + self.contractHour + " hours at " + self.pay + "/hour"
+            msg += "contract of " + str(self.contractHour) + " hours at " + str(self.pay) + "/hour"
         else:
-            msg += "monthly salary of " + self.pay
+            msg += "monthly salary of " + str(self.pay)
         if self.bonus > 0:
-            msg += " and receives a bonus commission of " + self.bonus 
+            msg += " and receives a bonus commission of " + str(self.bonus) 
         elif self.commission > 0:
-            msg += " and receives a commission for " + self.contractNum + " contract(s) at " + self.commission + "/contract"
-        msg += ". Their total pay is " + self.get_pay()
+            msg += " and receives a commission for " + str(self.contractNum) + " contract(s) at " + str(self.commission) + "/contract"
+        msg += ". Their total pay is " + str(self.get_pay())
         return msg
 
 
