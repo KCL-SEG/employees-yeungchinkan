@@ -27,7 +27,7 @@ class Employee:
             msg += " and receives a bonus commission of " + str(self.bonus) 
         elif self.commission > 0:
             msg += " and receives a commission for " + str(self.contractNum) + " contract(s) at " + str(self.commission) + "/contract"
-        msg += ".  Their total pay is " + str(self.get_pay())
+        msg += ".  Their total pay is " + str(self.get_pay()) + "."
         return msg
 
 
